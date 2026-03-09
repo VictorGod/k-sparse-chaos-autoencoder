@@ -1,0 +1,1407 @@
+{
+  "experiment": "coefficient_combination",
+  "timestamp": "2026-02-28T19:46:49.861421",
+  "config": {
+    "original": {
+      "a": 8.0,
+      "w": 0.5,
+      "b": 4.0
+    },
+    "optimized": {
+      "a": 4.0,
+      "w": 1.0,
+      "b": 16.0
+    },
+    "num_runs": 10,
+    "epochs": 10,
+    "latent_dim": 128,
+    "k_active": 32
+  },
+  "part_a": {
+    "domains": [
+      "Logistic",
+      "Lorenz96",
+      "MNIST"
+    ],
+    "results": {
+      "Logistic": {
+        "Original": [
+          {
+            "mean_variance": 0.4088808298110962,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11663703620433807
+          },
+          {
+            "mean_variance": 0.41304445266723633,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11668966710567474
+          },
+          {
+            "mean_variance": 0.4153147339820862,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11673787236213684
+          },
+          {
+            "mean_variance": 0.4178038537502289,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11658216267824173
+          },
+          {
+            "mean_variance": 0.41377970576286316,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11666234582662582
+          },
+          {
+            "mean_variance": 0.41691091656684875,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11660555005073547
+          },
+          {
+            "mean_variance": 0.4122261106967926,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11665479093790054
+          },
+          {
+            "mean_variance": 0.41410112380981445,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11667171120643616
+          },
+          {
+            "mean_variance": 0.412043035030365,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.1167011708021164
+          },
+          {
+            "mean_variance": 0.4061513841152191,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11662523448467255
+          }
+        ],
+        "Optimized": [
+          {
+            "mean_variance": 0.7813816070556641,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11732455343008041
+          },
+          {
+            "mean_variance": 0.7877051830291748,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.1172541081905365
+          },
+          {
+            "mean_variance": 0.7909780144691467,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11734265089035034
+          },
+          {
+            "mean_variance": 0.778337299823761,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11722749471664429
+          },
+          {
+            "mean_variance": 0.7839750647544861,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11731600016355515
+          },
+          {
+            "mean_variance": 0.778538703918457,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11732178181409836
+          },
+          {
+            "mean_variance": 0.7770789265632629,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11733312159776688
+          },
+          {
+            "mean_variance": 0.7730439901351929,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11726649105548859
+          },
+          {
+            "mean_variance": 0.7873563766479492,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11731206625699997
+          },
+          {
+            "mean_variance": 0.8064334392547607,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11730615794658661
+          }
+        ],
+        "TopK_ReLU": [
+          {
+            "mean_variance": 1.179406762123108,
+            "dead_neurons": 14,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11295890063047409
+          },
+          {
+            "mean_variance": 1.1896905899047852,
+            "dead_neurons": 19,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11338502913713455
+          },
+          {
+            "mean_variance": 1.232710361480713,
+            "dead_neurons": 13,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11261594295501709
+          },
+          {
+            "mean_variance": 1.1231529712677002,
+            "dead_neurons": 17,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11236179620027542
+          },
+          {
+            "mean_variance": 1.110940933227539,
+            "dead_neurons": 23,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11266564577817917
+          },
+          {
+            "mean_variance": 1.0700167417526245,
+            "dead_neurons": 21,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11295275390148163
+          },
+          {
+            "mean_variance": 1.420330286026001,
+            "dead_neurons": 10,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11242234706878662
+          },
+          {
+            "mean_variance": 0.9266660213470459,
+            "dead_neurons": 23,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11370033770799637
+          },
+          {
+            "mean_variance": 1.1359821557998657,
+            "dead_neurons": 16,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11272428929805756
+          },
+          {
+            "mean_variance": 1.1138103008270264,
+            "dead_neurons": 12,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11292855441570282
+          }
+        ]
+      },
+      "Lorenz96": {
+        "Original": [
+          {
+            "mean_variance": 0.40796780586242676,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.04323994368314743
+          },
+          {
+            "mean_variance": 0.408625066280365,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.0431966558098793
+          },
+          {
+            "mean_variance": 0.4100968539714813,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.04320644214749336
+          },
+          {
+            "mean_variance": 0.41310709714889526,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.043201129883527756
+          },
+          {
+            "mean_variance": 0.41285544633865356,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.04331760108470917
+          },
+          {
+            "mean_variance": 0.4115399718284607,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.043206214904785156
+          },
+          {
+            "mean_variance": 0.41720661520957947,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.043221212923526764
+          },
+          {
+            "mean_variance": 0.4104674458503723,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.04319645091891289
+          },
+          {
+            "mean_variance": 0.415300577878952,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.043098993599414825
+          },
+          {
+            "mean_variance": 0.4177706241607666,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.04323450103402138
+          }
+        ],
+        "Optimized": [
+          {
+            "mean_variance": 0.7820289134979248,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.04364318400621414
+          },
+          {
+            "mean_variance": 0.7687067985534668,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.04357432574033737
+          },
+          {
+            "mean_variance": 0.7966806888580322,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.04359399899840355
+          },
+          {
+            "mean_variance": 0.754259467124939,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.043657876551151276
+          },
+          {
+            "mean_variance": 0.7625067234039307,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.04369032755494118
+          },
+          {
+            "mean_variance": 0.770811140537262,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.04353789612650871
+          },
+          {
+            "mean_variance": 0.7690794467926025,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.04363849759101868
+          },
+          {
+            "mean_variance": 0.7786044478416443,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.04365311563014984
+          },
+          {
+            "mean_variance": 0.7680307626724243,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.04361329600214958
+          },
+          {
+            "mean_variance": 0.7725130915641785,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.04366661235690117
+          }
+        ],
+        "TopK_ReLU": [
+          {
+            "mean_variance": 1.8532788753509521,
+            "dead_neurons": 14,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.034075431525707245
+          },
+          {
+            "mean_variance": 1.708306074142456,
+            "dead_neurons": 18,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.032829225063323975
+          },
+          {
+            "mean_variance": 1.8562533855438232,
+            "dead_neurons": 22,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.03452719375491142
+          },
+          {
+            "mean_variance": 2.0384933948516846,
+            "dead_neurons": 9,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.0330188162624836
+          },
+          {
+            "mean_variance": 1.7472517490386963,
+            "dead_neurons": 12,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.03177591413259506
+          },
+          {
+            "mean_variance": 1.6556806564331055,
+            "dead_neurons": 24,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.03450551629066467
+          },
+          {
+            "mean_variance": 1.733019232749939,
+            "dead_neurons": 20,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.034104201942682266
+          },
+          {
+            "mean_variance": 1.786268949508667,
+            "dead_neurons": 18,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.033450234681367874
+          },
+          {
+            "mean_variance": 1.9223908185958862,
+            "dead_neurons": 13,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.031910039484500885
+          },
+          {
+            "mean_variance": 1.8634746074676514,
+            "dead_neurons": 19,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.033712323755025864
+          }
+        ]
+      },
+      "MNIST": {
+        "Original": [
+          {
+            "mean_variance": 0.40587118268013,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.06690041720867157
+          },
+          {
+            "mean_variance": 0.4059820771217346,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.0665697231888771
+          },
+          {
+            "mean_variance": 0.41305410861968994,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.06673061847686768
+          },
+          {
+            "mean_variance": 0.41141289472579956,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.06684903800487518
+          },
+          {
+            "mean_variance": 0.40956911444664,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.06675191968679428
+          },
+          {
+            "mean_variance": 0.4138947129249573,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.06651104241609573
+          },
+          {
+            "mean_variance": 0.4079151749610901,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.06660353392362595
+          },
+          {
+            "mean_variance": 0.4114643335342407,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.06647246330976486
+          },
+          {
+            "mean_variance": 0.40962788462638855,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.06636086106300354
+          },
+          {
+            "mean_variance": 0.4076676070690155,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.06669273972511292
+          }
+        ],
+        "Optimized": [
+          {
+            "mean_variance": 0.8004774451255798,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.06370575726032257
+          },
+          {
+            "mean_variance": 0.8086960911750793,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.06351245194673538
+          },
+          {
+            "mean_variance": 0.8052157163619995,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.06415441632270813
+          },
+          {
+            "mean_variance": 0.8006864786148071,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.06364880502223969
+          },
+          {
+            "mean_variance": 0.8072088360786438,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.06351159512996674
+          },
+          {
+            "mean_variance": 0.7918891906738281,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.06414738297462463
+          },
+          {
+            "mean_variance": 0.7740076184272766,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.0645354613661766
+          },
+          {
+            "mean_variance": 0.771133542060852,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.06505663692951202
+          },
+          {
+            "mean_variance": 0.7895166873931885,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.0641857460141182
+          },
+          {
+            "mean_variance": 0.7815224528312683,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.06431511044502258
+          }
+        ],
+        "TopK_ReLU": [
+          {
+            "mean_variance": 2223.327880859375,
+            "dead_neurons": 50,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.011774664744734764
+          },
+          {
+            "mean_variance": 3372.26220703125,
+            "dead_neurons": 66,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.012489461340010166
+          },
+          {
+            "mean_variance": 3669.621337890625,
+            "dead_neurons": 67,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.012247925624251366
+          },
+          {
+            "mean_variance": 9372.876953125,
+            "dead_neurons": 62,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.013735479675233364
+          },
+          {
+            "mean_variance": 3161.94287109375,
+            "dead_neurons": 56,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.012133755721151829
+          },
+          {
+            "mean_variance": 4513.2412109375,
+            "dead_neurons": 66,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.012744706124067307
+          },
+          {
+            "mean_variance": 2414.7802734375,
+            "dead_neurons": 52,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.011655477806925774
+          },
+          {
+            "mean_variance": 2819.287109375,
+            "dead_neurons": 65,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.011828763410449028
+          },
+          {
+            "mean_variance": 4253.7919921875,
+            "dead_neurons": 55,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.012950615026056767
+          },
+          {
+            "mean_variance": 3288.837890625,
+            "dead_neurons": 31,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.012062430381774902
+          }
+        ]
+      }
+    },
+    "summary": {
+      "Logistic": {
+        "Original": {
+          "var_mean": 0.4130256146192551,
+          "var_std": 0.003330643954508345,
+          "dead_mean": 0.0,
+          "dead_std": 0.0,
+          "loss_mean": 0.11665675416588783,
+          "loss_std": 4.411704283750067e-05
+        },
+        "Optimized": {
+          "var_mean": 0.7844828605651856,
+          "var_std": 0.009007207814774019,
+          "dead_mean": 0.0,
+          "dead_std": 0.0,
+          "loss_mean": 0.11730044260621071,
+          "loss_std": 3.5940147173319936e-05
+        },
+        "TopK_ReLU": {
+          "var_mean": 1.1502707123756408,
+          "var_std": 0.11932593629416194,
+          "dead_mean": 16.8,
+          "dead_std": 4.3772137256478585,
+          "loss_mean": 0.11287155970931054,
+          "loss_std": 0.00039485098860389675
+        }
+      },
+      "Lorenz96": {
+        "Original": {
+          "var_mean": 0.4124937504529953,
+          "var_std": 0.003235017728522964,
+          "dead_mean": 0.0,
+          "dead_std": 0.0,
+          "loss_mean": 0.0432119145989418,
+          "loss_std": 5.0944794854540015e-05
+        },
+        "Optimized": {
+          "var_mean": 0.7723221480846405,
+          "var_std": 0.010926809024723361,
+          "dead_mean": 0.0,
+          "dead_std": 0.0,
+          "loss_mean": 0.04362691305577755,
+          "loss_std": 4.427176324952342e-05
+        },
+        "TopK_ReLU": {
+          "var_mean": 1.8164417743682861,
+          "var_std": 0.10764784811266793,
+          "dead_mean": 16.9,
+          "dead_std": 4.504442251822082,
+          "loss_mean": 0.033390889689326284,
+          "loss_std": 0.0009419555264516573
+        }
+      },
+      "MNIST": {
+        "Original": {
+          "var_mean": 0.40964590907096865,
+          "var_std": 0.0026586581150922,
+          "dead_mean": 0.0,
+          "dead_std": 0.0,
+          "loss_mean": 0.06664423570036888,
+          "loss_std": 0.00016240060153887312
+        },
+        "Optimized": {
+          "var_mean": 0.7930354058742524,
+          "var_std": 0.013024659781201264,
+          "dead_mean": 0.0,
+          "dead_std": 0.0,
+          "loss_mean": 0.06407733634114265,
+          "loss_std": 0.0004699907253005418
+        },
+        "TopK_ReLU": {
+          "var_mean": 3908.99697265625,
+          "var_std": 1946.475856109957,
+          "dead_mean": 57.0,
+          "dead_std": 10.516653460107925,
+          "loss_mean": 0.012362327985465526,
+          "loss_std": 0.0006065435931606933
+        }
+      }
+    }
+  },
+  "part_b": {
+    "sizes": [
+      2000,
+      5000,
+      10000,
+      20000
+    ],
+    "results": {
+      "Original": {
+        "2000": [
+          {
+            "mean_variance": 0.4196639060974121,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.1188712790608406
+          },
+          {
+            "mean_variance": 0.41846930980682373,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11889220029115677
+          },
+          {
+            "mean_variance": 0.4138093888759613,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11904584616422653
+          },
+          {
+            "mean_variance": 0.412309467792511,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11878344416618347
+          },
+          {
+            "mean_variance": 0.4194209575653076,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11902514100074768
+          },
+          {
+            "mean_variance": 0.4191480278968811,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11898483335971832
+          },
+          {
+            "mean_variance": 0.4202880859375,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11897877603769302
+          },
+          {
+            "mean_variance": 0.4173010587692261,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11876099556684494
+          },
+          {
+            "mean_variance": 0.41466856002807617,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11884742975234985
+          },
+          {
+            "mean_variance": 0.4193280339241028,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11903482675552368
+          }
+        ],
+        "5000": [
+          {
+            "mean_variance": 0.4193742871284485,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11664462834596634
+          },
+          {
+            "mean_variance": 0.4159751534461975,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11662641167640686
+          },
+          {
+            "mean_variance": 0.4090503752231598,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11666613817214966
+          },
+          {
+            "mean_variance": 0.4067709445953369,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11668173223733902
+          },
+          {
+            "mean_variance": 0.41418224573135376,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11667552590370178
+          },
+          {
+            "mean_variance": 0.4175419807434082,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11662866175174713
+          },
+          {
+            "mean_variance": 0.41581785678863525,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11658760905265808
+          },
+          {
+            "mean_variance": 0.4130558371543884,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11662834137678146
+          },
+          {
+            "mean_variance": 0.41436249017715454,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11664927005767822
+          },
+          {
+            "mean_variance": 0.4156186580657959,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11665498465299606
+          }
+        ],
+        "10000": [
+          {
+            "mean_variance": 0.40411221981048584,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.1168081983923912
+          },
+          {
+            "mean_variance": 0.40760183334350586,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11687850952148438
+          },
+          {
+            "mean_variance": 0.4105125069618225,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11680278182029724
+          },
+          {
+            "mean_variance": 0.4070448875427246,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11674895882606506
+          },
+          {
+            "mean_variance": 0.4101608991622925,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11683934181928635
+          },
+          {
+            "mean_variance": 0.4125058650970459,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11681661754846573
+          },
+          {
+            "mean_variance": 0.4094547927379608,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11684191972017288
+          },
+          {
+            "mean_variance": 0.4044475853443146,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11678974330425262
+          },
+          {
+            "mean_variance": 0.40926340222358704,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11687180399894714
+          },
+          {
+            "mean_variance": 0.4074413478374481,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11680391430854797
+          }
+        ],
+        "20000": [
+          {
+            "mean_variance": 0.3979528546333313,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11655008047819138
+          },
+          {
+            "mean_variance": 0.400646448135376,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11650565266609192
+          },
+          {
+            "mean_variance": 0.4014151990413666,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11655642837285995
+          },
+          {
+            "mean_variance": 0.40130239725112915,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11656585335731506
+          },
+          {
+            "mean_variance": 0.3995200991630554,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11655914038419724
+          },
+          {
+            "mean_variance": 0.40005093812942505,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11656392365694046
+          },
+          {
+            "mean_variance": 0.3983306586742401,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11654086410999298
+          },
+          {
+            "mean_variance": 0.4050365090370178,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11654260754585266
+          },
+          {
+            "mean_variance": 0.40097954869270325,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11654387414455414
+          },
+          {
+            "mean_variance": 0.4075896739959717,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11657558381557465
+          }
+        ]
+      },
+      "Optimized": {
+        "2000": [
+          {
+            "mean_variance": 0.8091416358947754,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11989651620388031
+          },
+          {
+            "mean_variance": 0.7992768287658691,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11980073153972626
+          },
+          {
+            "mean_variance": 0.7936597466468811,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11982636153697968
+          },
+          {
+            "mean_variance": 0.8147980570793152,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.1195797324180603
+          },
+          {
+            "mean_variance": 0.7995975017547607,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.1200273260474205
+          },
+          {
+            "mean_variance": 0.7984278202056885,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11994883418083191
+          },
+          {
+            "mean_variance": 0.7993926405906677,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11990375816822052
+          },
+          {
+            "mean_variance": 0.789319634437561,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11992010474205017
+          },
+          {
+            "mean_variance": 0.8009231686592102,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11978860199451447
+          },
+          {
+            "mean_variance": 0.8103876113891602,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11997957527637482
+          }
+        ],
+        "5000": [
+          {
+            "mean_variance": 0.7647160887718201,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11717343330383301
+          },
+          {
+            "mean_variance": 0.7962929010391235,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11728460341691971
+          },
+          {
+            "mean_variance": 0.7820374965667725,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11730553954839706
+          },
+          {
+            "mean_variance": 0.79349684715271,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.117312952876091
+          },
+          {
+            "mean_variance": 0.8198733925819397,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11723143607378006
+          },
+          {
+            "mean_variance": 0.7905149459838867,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11727358400821686
+          },
+          {
+            "mean_variance": 0.7825080156326294,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11730446666479111
+          },
+          {
+            "mean_variance": 0.777621328830719,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11728212982416153
+          },
+          {
+            "mean_variance": 0.8110026121139526,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.1172710508108139
+          },
+          {
+            "mean_variance": 0.7961391806602478,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11730656772851944
+          }
+        ],
+        "10000": [
+          {
+            "mean_variance": 0.7896417379379272,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11744335293769836
+          },
+          {
+            "mean_variance": 0.7674984931945801,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11745044589042664
+          },
+          {
+            "mean_variance": 0.7709858417510986,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11742986738681793
+          },
+          {
+            "mean_variance": 0.7746074199676514,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11746592819690704
+          },
+          {
+            "mean_variance": 0.7701188325881958,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.1174430400133133
+          },
+          {
+            "mean_variance": 0.7755276560783386,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11747951060533524
+          },
+          {
+            "mean_variance": 0.7642546892166138,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11744831502437592
+          },
+          {
+            "mean_variance": 0.7698758244514465,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11747220903635025
+          },
+          {
+            "mean_variance": 0.777146577835083,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11743610352277756
+          },
+          {
+            "mean_variance": 0.7712444067001343,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.1174510195851326
+          }
+        ],
+        "20000": [
+          {
+            "mean_variance": 0.7272909283638,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11716913431882858
+          },
+          {
+            "mean_variance": 0.7397335767745972,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11714012920856476
+          },
+          {
+            "mean_variance": 0.7366573810577393,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.1171814501285553
+          },
+          {
+            "mean_variance": 0.7441269159317017,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11716843396425247
+          },
+          {
+            "mean_variance": 0.7305787205696106,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11718901246786118
+          },
+          {
+            "mean_variance": 0.7352592945098877,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11717713624238968
+          },
+          {
+            "mean_variance": 0.7478271722793579,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11717160046100616
+          },
+          {
+            "mean_variance": 0.7433631420135498,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11720395088195801
+          },
+          {
+            "mean_variance": 0.7313361167907715,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11719390004873276
+          },
+          {
+            "mean_variance": 0.7396576404571533,
+            "dead_neurons": 0,
+            "total_neurons": 128,
+            "sparsity": 0.75,
+            "val_loss": 0.11713919043540955
+          }
+        ]
+      }
+    },
+    "summary": [
+      {
+        "size": 2000,
+        "orig_var": 0.4174406796693802,
+        "orig_var_std": 0.0026781884216146765,
+        "opt_var": 0.8014924645423889,
+        "opt_var_std": 0.007394774128775678,
+        "orig_dead": 0.0,
+        "opt_dead": 0.0,
+        "orig_loss": 0.11892247721552848,
+        "opt_loss": 0.11986715421080589,
+        "ratio": 1.9200152346848034,
+        "p_value": 6.460976808342412e-20
+      },
+      {
+        "size": 5000,
+        "orig_var": 0.4141749829053879,
+        "orig_var_std": 0.003588347412350756,
+        "opt_var": 0.7914202809333801,
+        "opt_var_std": 0.015215714016458333,
+        "orig_dead": 0.0,
+        "opt_dead": 0.0,
+        "orig_loss": 0.11664433032274246,
+        "opt_loss": 0.11727457642555236,
+        "ratio": 1.9108355492204325,
+        "p_value": 6.203320931337048e-15
+      },
+      {
+        "size": 10000,
+        "orig_var": 0.4082545340061188,
+        "orig_var_std": 0.002519267385588049,
+        "opt_var": 0.773090147972107,
+        "opt_var_std": 0.006595306699451749,
+        "orig_dead": 0.0,
+        "opt_dead": 0.0,
+        "orig_loss": 0.11682017892599106,
+        "opt_loss": 0.11745197921991349,
+        "ratio": 1.893647427221274,
+        "p_value": 1.4649065066506813e-20
+      },
+      {
+        "size": 20000,
+        "orig_var": 0.4012824326753616,
+        "orig_var_std": 0.0028073133216079153,
+        "opt_var": 0.7375830888748169,
+        "opt_var_std": 0.006247972894327351,
+        "orig_dead": 0.0,
+        "opt_dead": 0.0,
+        "orig_loss": 0.11655040085315704,
+        "opt_loss": 0.11717339381575584,
+        "ratio": 1.83806473649327,
+        "p_value": 1.2844337324680841e-21
+      }
+    ]
+  }
+}

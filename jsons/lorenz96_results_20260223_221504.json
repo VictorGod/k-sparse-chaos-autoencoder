@@ -1,0 +1,68 @@
+{
+  "experiment": "lorenz96_generalization",
+  "timestamp": "2026-02-23T22:15:04.136965",
+  "config": {
+    "train_size": 5000,
+    "test_size": 500,
+    "num_runs": 5,
+    "epochs": 10,
+    "lorenz96": {
+      "state_dim": 40,
+      "F": 8.0
+    }
+  },
+  "summary": {
+    "Lorenz96": {
+      "V4_KSparse_Chaos": {
+        "var_mean": 0.41237822771072385,
+        "var_std": 0.0018149276468932807,
+        "dead_mean": 0.0,
+        "dead_std": 0.0,
+        "loss_mean": 0.0432344026863575,
+        "loss_std": 4.8757288782267225e-05
+      },
+      "TopK_ReLU": {
+        "var_mean": 1.8086508512496948,
+        "var_std": 0.09345986705178495,
+        "dead_mean": 12.6,
+        "dead_std": 1.2,
+        "loss_mean": 0.0322755828499794,
+        "loss_std": 0.00033487852828705813
+      },
+      "Dense_ReLU": {
+        "var_mean": 0.5709275722503662,
+        "var_std": 0.029224737610945645,
+        "dead_mean": 0.0,
+        "dead_std": 0.0,
+        "loss_mean": 0.02863755188882351,
+        "loss_std": 0.001430835627311463
+      }
+    },
+    "Logistic": {
+      "V4_KSparse_Chaos": {
+        "var_mean": 0.413269180059433,
+        "var_std": 0.0031317519340893513,
+        "dead_mean": 0.0,
+        "dead_std": 0.0,
+        "loss_mean": 0.11663391888141632,
+        "loss_std": 5.922938616479236e-05
+      },
+      "TopK_ReLU": {
+        "var_mean": 1.1074453353881837,
+        "var_std": 0.09899180566284334,
+        "dead_mean": 13.2,
+        "dead_std": 4.1182520563948,
+        "loss_mean": 0.11256167590618134,
+        "loss_std": 0.0002619645141650538
+      },
+      "Dense_ReLU": {
+        "var_mean": 0.38573281168937684,
+        "var_std": 0.09149226455049457,
+        "dead_mean": 0.0,
+        "dead_std": 0.0,
+        "loss_mean": 0.11980534046888351,
+        "loss_std": 0.0017067856235743245
+      }
+    }
+  }
+}

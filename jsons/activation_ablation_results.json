@@ -1,0 +1,194 @@
+{
+  "ReLU": [
+    {
+      "mean_variance": 0.8579971194267273,
+      "dead_neurons": 58,
+      "sparsity": 0.75,
+      "val_loss": 0.12218254059553146
+    },
+    {
+      "mean_variance": 1.1009280681610107,
+      "dead_neurons": 52,
+      "sparsity": 0.75,
+      "val_loss": 0.12467928230762482
+    },
+    {
+      "mean_variance": 0.7284916043281555,
+      "dead_neurons": 56,
+      "sparsity": 0.75,
+      "val_loss": 0.12109091877937317
+    },
+    {
+      "mean_variance": 0.8717309832572937,
+      "dead_neurons": 45,
+      "sparsity": 0.75,
+      "val_loss": 0.12207820266485214
+    },
+    {
+      "mean_variance": 1.0111854076385498,
+      "dead_neurons": 31,
+      "sparsity": 0.75,
+      "val_loss": 0.12334061414003372
+    }
+  ],
+  "LeakyReLU(0.01)": [
+    {
+      "mean_variance": 0.02886628732085228,
+      "dead_neurons": 68,
+      "sparsity": 0.75,
+      "val_loss": 0.1134476363658905
+    },
+    {
+      "mean_variance": 0.028914589434862137,
+      "dead_neurons": 70,
+      "sparsity": 0.75,
+      "val_loss": 0.11366871744394302
+    },
+    {
+      "mean_variance": 0.024226533249020576,
+      "dead_neurons": 48,
+      "sparsity": 0.75,
+      "val_loss": 0.11406656354665756
+    },
+    {
+      "mean_variance": 0.02167741023004055,
+      "dead_neurons": 48,
+      "sparsity": 0.75,
+      "val_loss": 0.11425931751728058
+    },
+    {
+      "mean_variance": 0.024887681007385254,
+      "dead_neurons": 66,
+      "sparsity": 0.75,
+      "val_loss": 0.11400069296360016
+    }
+  ],
+  "ELU": [
+    {
+      "mean_variance": 0.07898202538490295,
+      "dead_neurons": 0,
+      "sparsity": 0.75,
+      "val_loss": 0.111417256295681
+    },
+    {
+      "mean_variance": 0.08124052733182907,
+      "dead_neurons": 0,
+      "sparsity": 0.75,
+      "val_loss": 0.11160837113857269
+    },
+    {
+      "mean_variance": 0.07815573364496231,
+      "dead_neurons": 0,
+      "sparsity": 0.75,
+      "val_loss": 0.11180996149778366
+    },
+    {
+      "mean_variance": 0.08536545932292938,
+      "dead_neurons": 0,
+      "sparsity": 0.75,
+      "val_loss": 0.11115429550409317
+    },
+    {
+      "mean_variance": 0.08285249769687653,
+      "dead_neurons": 0,
+      "sparsity": 0.75,
+      "val_loss": 0.11129561066627502
+    }
+  ],
+  "GELU": [
+    {
+      "mean_variance": 0.04030120372772217,
+      "dead_neurons": 0,
+      "sparsity": 0.75,
+      "val_loss": 0.11408443748950958
+    },
+    {
+      "mean_variance": 0.03699669986963272,
+      "dead_neurons": 1,
+      "sparsity": 0.75,
+      "val_loss": 0.11379048973321915
+    },
+    {
+      "mean_variance": 0.03826763108372688,
+      "dead_neurons": 0,
+      "sparsity": 0.75,
+      "val_loss": 0.11401315033435822
+    },
+    {
+      "mean_variance": 0.04500624164938927,
+      "dead_neurons": 0,
+      "sparsity": 0.75,
+      "val_loss": 0.11385444551706314
+    },
+    {
+      "mean_variance": 0.03405599296092987,
+      "dead_neurons": 0,
+      "sparsity": 0.75,
+      "val_loss": 0.11323946714401245
+    }
+  ],
+  "tanh": [
+    {
+      "mean_variance": 0.09423738718032837,
+      "dead_neurons": 0,
+      "sparsity": 0.75,
+      "val_loss": 0.10953808575868607
+    },
+    {
+      "mean_variance": 0.09567683190107346,
+      "dead_neurons": 0,
+      "sparsity": 0.75,
+      "val_loss": 0.10915830731391907
+    },
+    {
+      "mean_variance": 0.09442543983459473,
+      "dead_neurons": 0,
+      "sparsity": 0.75,
+      "val_loss": 0.10903801769018173
+    },
+    {
+      "mean_variance": 0.09587625414133072,
+      "dead_neurons": 0,
+      "sparsity": 0.75,
+      "val_loss": 0.1090703010559082
+    },
+    {
+      "mean_variance": 0.09476423263549805,
+      "dead_neurons": 0,
+      "sparsity": 0.75,
+      "val_loss": 0.10895320773124695
+    }
+  ],
+  "sin8+tanh4": [
+    {
+      "mean_variance": 0.41989749670028687,
+      "dead_neurons": 0,
+      "sparsity": 0.75,
+      "val_loss": 0.11922649294137955
+    },
+    {
+      "mean_variance": 0.41795259714126587,
+      "dead_neurons": 0,
+      "sparsity": 0.75,
+      "val_loss": 0.11904540657997131
+    },
+    {
+      "mean_variance": 0.4147936701774597,
+      "dead_neurons": 0,
+      "sparsity": 0.75,
+      "val_loss": 0.11900967359542847
+    },
+    {
+      "mean_variance": 0.42274776101112366,
+      "dead_neurons": 0,
+      "sparsity": 0.75,
+      "val_loss": 0.11921687424182892
+    },
+    {
+      "mean_variance": 0.4199821949005127,
+      "dead_neurons": 0,
+      "sparsity": 0.75,
+      "val_loss": 0.11909889429807663
+    }
+  ]
+}

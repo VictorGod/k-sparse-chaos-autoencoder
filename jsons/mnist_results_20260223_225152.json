@@ -1,0 +1,42 @@
+{
+  "experiment": "mnist_test",
+  "timestamp": "2026-02-23T22:51:52.247291",
+  "config": {
+    "dataset": "MNIST",
+    "train_size": 60000,
+    "test_size": 10000,
+    "num_runs": 5,
+    "epochs": 10,
+    "latent_dim": 128,
+    "k_active": 32
+  },
+  "summary": {
+    "V4_KSparse_Chaos": {
+      "var_mean": 0.40972310304641724,
+      "var_std": 0.0032960413585158676,
+      "dead_mean": 0.0,
+      "dead_std": 0.0,
+      "sparsity_mean": 0.75,
+      "loss_mean": 0.06707823872566224,
+      "loss_std": 0.000131301097264443
+    },
+    "TopK_ReLU": {
+      "var_mean": 3511.338525390625,
+      "var_std": 549.5513535601299,
+      "dead_mean": 61.0,
+      "dead_std": 5.727128425310541,
+      "sparsity_mean": 0.75,
+      "loss_mean": 0.011250629648566246,
+      "loss_std": 0.00036139614091326326
+    },
+    "Dense_ReLU": {
+      "var_mean": 1632275.8,
+      "var_std": 496001.39177988074,
+      "dead_mean": 0.0,
+      "dead_std": 0.0,
+      "sparsity_mean": 0.0,
+      "loss_mean": 0.12069349437952041,
+      "loss_std": 0.002201611903065187
+    }
+  }
+}

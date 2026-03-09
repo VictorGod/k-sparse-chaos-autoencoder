@@ -1,0 +1,228 @@
+{
+  "experiment": "dataset_size_scaling",
+  "timestamp": "2026-02-23T21:45:56.999199",
+  "config": {
+    "sizes": [
+      2000,
+      5000,
+      10000,
+      20000
+    ],
+    "num_runs": 3,
+    "epochs": 10,
+    "latent_dim": 128,
+    "k_active": 32
+  },
+  "results": {
+    "V4_KSparse": {
+      "2000": [
+        {
+          "mean_variance": 0.4178353548049927,
+          "dead_neurons": 0,
+          "total_neurons": 128,
+          "val_loss": 0.1187981441617012
+        },
+        {
+          "mean_variance": 0.4189261794090271,
+          "dead_neurons": 0,
+          "total_neurons": 128,
+          "val_loss": 0.11900805681943893
+        },
+        {
+          "mean_variance": 0.41824012994766235,
+          "dead_neurons": 0,
+          "total_neurons": 128,
+          "val_loss": 0.11897876858711243
+        }
+      ],
+      "5000": [
+        {
+          "mean_variance": 0.412332147359848,
+          "dead_neurons": 0,
+          "total_neurons": 128,
+          "val_loss": 0.11665531992912292
+        },
+        {
+          "mean_variance": 0.41459542512893677,
+          "dead_neurons": 0,
+          "total_neurons": 128,
+          "val_loss": 0.11663085222244263
+        },
+        {
+          "mean_variance": 0.41237252950668335,
+          "dead_neurons": 0,
+          "total_neurons": 128,
+          "val_loss": 0.11665508896112442
+        }
+      ],
+      "10000": [
+        {
+          "mean_variance": 0.4094158113002777,
+          "dead_neurons": 0,
+          "total_neurons": 128,
+          "val_loss": 0.11682558804750443
+        },
+        {
+          "mean_variance": 0.40525001287460327,
+          "dead_neurons": 0,
+          "total_neurons": 128,
+          "val_loss": 0.11680461466312408
+        },
+        {
+          "mean_variance": 0.40842896699905396,
+          "dead_neurons": 0,
+          "total_neurons": 128,
+          "val_loss": 0.11683263629674911
+        }
+      ],
+      "20000": [
+        {
+          "mean_variance": 0.4039161503314972,
+          "dead_neurons": 0,
+          "total_neurons": 128,
+          "val_loss": 0.11656560748815536
+        },
+        {
+          "mean_variance": 0.4039981961250305,
+          "dead_neurons": 0,
+          "total_neurons": 128,
+          "val_loss": 0.11654236912727356
+        },
+        {
+          "mean_variance": 0.4040232300758362,
+          "dead_neurons": 0,
+          "total_neurons": 128,
+          "val_loss": 0.11652718484401703
+        }
+      ]
+    },
+    "Dense_ReLU": {
+      "2000": [
+        {
+          "mean_variance": 0.2396165430545807,
+          "dead_neurons": 0,
+          "total_neurons": 128,
+          "val_loss": 0.12026800960302353
+        },
+        {
+          "mean_variance": 0.23523138463497162,
+          "dead_neurons": 0,
+          "total_neurons": 128,
+          "val_loss": 0.12010839581489563
+        },
+        {
+          "mean_variance": 0.24705153703689575,
+          "dead_neurons": 0,
+          "total_neurons": 128,
+          "val_loss": 0.12069682031869888
+        }
+      ],
+      "5000": [
+        {
+          "mean_variance": 0.29643160104751587,
+          "dead_neurons": 0,
+          "total_neurons": 128,
+          "val_loss": 0.1195748969912529
+        },
+        {
+          "mean_variance": 0.2415141761302948,
+          "dead_neurons": 0,
+          "total_neurons": 128,
+          "val_loss": 0.11811552941799164
+        },
+        {
+          "mean_variance": 0.48708009719848633,
+          "dead_neurons": 0,
+          "total_neurons": 128,
+          "val_loss": 0.1210724338889122
+        }
+      ],
+      "10000": [
+        {
+          "mean_variance": 0.6974301934242249,
+          "dead_neurons": 0,
+          "total_neurons": 128,
+          "val_loss": 0.11843308806419373
+        },
+        {
+          "mean_variance": 0.786028265953064,
+          "dead_neurons": 0,
+          "total_neurons": 128,
+          "val_loss": 0.12031491100788116
+        },
+        {
+          "mean_variance": 0.23441562056541443,
+          "dead_neurons": 0,
+          "total_neurons": 128,
+          "val_loss": 0.11713365465402603
+        }
+      ],
+      "20000": [
+        {
+          "mean_variance": 1.305628776550293,
+          "dead_neurons": 0,
+          "total_neurons": 128,
+          "val_loss": 0.12090844660997391
+        },
+        {
+          "mean_variance": 1.5780245065689087,
+          "dead_neurons": 0,
+          "total_neurons": 128,
+          "val_loss": 0.19413185119628906
+        },
+        {
+          "mean_variance": 0.9971718788146973,
+          "dead_neurons": 0,
+          "total_neurons": 128,
+          "val_loss": 0.1206291988492012
+        }
+      ]
+    }
+  },
+  "summary": [
+    {
+      "size": 2000,
+      "v4_var_mean": 0.41833388805389404,
+      "v4_var_std": 0.00045023513564568235,
+      "v4_dead_mean": 0.0,
+      "dense_var_mean": 0.240633154908816,
+      "dense_var_std": 0.004878806237035659,
+      "dense_dead_mean": 0.0,
+      "ratio": 1.738471526138677,
+      "p_value": 8.646787903660546e-07
+    },
+    {
+      "size": 5000,
+      "v4_var_mean": 0.4131000339984894,
+      "v4_var_std": 0.0010575297172219463,
+      "v4_dead_mean": 0.0,
+      "dense_var_mean": 0.3416752914587657,
+      "dense_var_std": 0.1052327548470186,
+      "dense_dead_mean": 0.0,
+      "ratio": 1.2090427500179464,
+      "p_value": 0.39149857665032783
+    },
+    {
+      "size": 10000,
+      "v4_var_mean": 0.40769826372464496,
+      "v4_var_std": 0.0017774353410202966,
+      "v4_dead_mean": 0.0,
+      "dense_var_mean": 0.5726246933142344,
+      "dense_var_std": 0.24186971324960446,
+      "dense_dead_mean": 0.0,
+      "ratio": 0.7119816320965324,
+      "p_value": 0.38950283449495204
+    },
+    {
+      "size": 20000,
+      "v4_var_mean": 0.40397919217745465,
+      "v4_var_std": 4.5733870960344215e-05,
+      "v4_dead_mean": 0.0,
+      "dense_var_mean": 1.2936083873112996,
+      "dense_var_std": 0.23728437385035958,
+      "dense_dead_mean": 0.0,
+      "ratio": 0.3122886308870533,
+      "p_value": 0.006078192113528479
+    }
+  ]
+}
