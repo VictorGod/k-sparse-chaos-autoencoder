@@ -1,0 +1,81 @@
+{
+  "experiment": "llm_activations_sae",
+  "timestamp": "2026-04-08T15:55:32.911558",
+  "config": {
+    "llm_model": "gpt2",
+    "target_layer": 6,
+    "activation_dim": 768,
+    "num_activations": 54573,
+    "latent_dim": 3072,
+    "k_active": 307,
+    "overcomplete_ratio": 4.0,
+    "num_runs": 5,
+    "epochs": 10
+  },
+  "results": {
+    "Chaos_a1": [
+      {
+        "val_loss": 0.16500048339366913,
+        "quant4_loss": 0.16559945046901703,
+        "dead_neurons": 0,
+        "dead_pct": 0.0
+      },
+      {
+        "val_loss": 0.1647280603647232,
+        "quant4_loss": 0.16525773704051971,
+        "dead_neurons": 0,
+        "dead_pct": 0.0
+      },
+      {
+        "val_loss": 0.16443473100662231,
+        "quant4_loss": 0.16497069597244263,
+        "dead_neurons": 0,
+        "dead_pct": 0.0
+      },
+      {
+        "val_loss": 0.16434229910373688,
+        "quant4_loss": 0.16492128372192383,
+        "dead_neurons": 0,
+        "dead_pct": 0.0
+      },
+      {
+        "val_loss": 0.16488555073738098,
+        "quant4_loss": 0.1654774397611618,
+        "dead_neurons": 0,
+        "dead_pct": 0.0
+      }
+    ],
+    "TopK_ReLU": [
+      {
+        "val_loss": 0.1561776101589203,
+        "quant4_loss": 0.16248999536037445,
+        "dead_neurons": 0,
+        "dead_pct": 0.0
+      },
+      {
+        "val_loss": 0.1561424732208252,
+        "quant4_loss": 0.1625620424747467,
+        "dead_neurons": 0,
+        "dead_pct": 0.0
+      },
+      {
+        "val_loss": 0.15576998889446259,
+        "quant4_loss": 0.16210488975048065,
+        "dead_neurons": 0,
+        "dead_pct": 0.0
+      },
+      {
+        "val_loss": 0.15642669796943665,
+        "quant4_loss": 0.16284725069999695,
+        "dead_neurons": 0,
+        "dead_pct": 0.0
+      },
+      {
+        "val_loss": 0.15634280443191528,
+        "quant4_loss": 0.16277983784675598,
+        "dead_neurons": 0,
+        "dead_pct": 0.0
+      }
+    ]
+  }
+}

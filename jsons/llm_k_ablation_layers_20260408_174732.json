@@ -1,0 +1,739 @@
+{
+  "experiment": "llm_k_ablation_layer_comparison",
+  "timestamp": "2026-04-08T17:47:32.461077",
+  "config": {
+    "llm_model": "gpt2",
+    "activation_dim": 768,
+    "experiment_A": {
+      "description": "K ablation at 4x overcomplete, layer 6",
+      "latent_dim": 3072,
+      "k_percents": [
+        1,
+        5,
+        10,
+        20,
+        50
+      ]
+    },
+    "experiment_B": {
+      "description": "Layer comparison at 4x overcomplete, K=10%",
+      "target_layers": [
+        0,
+        3,
+        6,
+        9,
+        11
+      ]
+    },
+    "num_runs": 5,
+    "epochs": 10
+  },
+  "results_A": {
+    "1": {
+      "Chaos_a1": [
+        {
+          "val_loss": 0.6374582648277283,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.6433485746383667,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.6382193565368652,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.6494878530502319,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.6421369910240173,
+          "dead": 0,
+          "dead_pct": 0.0
+        }
+      ],
+      "TopK_ReLU": [
+        {
+          "val_loss": 0.3237523138523102,
+          "dead": 743,
+          "dead_pct": 24.186197916666664
+        },
+        {
+          "val_loss": 0.322346031665802,
+          "dead": 749,
+          "dead_pct": 24.381510416666664
+        },
+        {
+          "val_loss": 0.3232193887233734,
+          "dead": 784,
+          "dead_pct": 25.520833333333332
+        },
+        {
+          "val_loss": 0.32403600215911865,
+          "dead": 808,
+          "dead_pct": 26.302083333333332
+        },
+        {
+          "val_loss": 0.3227793276309967,
+          "dead": 802,
+          "dead_pct": 26.106770833333332
+        }
+      ]
+    },
+    "5": {
+      "Chaos_a1": [
+        {
+          "val_loss": 0.22799916565418243,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.2282647341489792,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.22843611240386963,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.22791457176208496,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.22830767929553986,
+          "dead": 0,
+          "dead_pct": 0.0
+        }
+      ],
+      "TopK_ReLU": [
+        {
+          "val_loss": 0.21088233590126038,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.2104436308145523,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.2106703370809555,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.21079017221927643,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.21119123697280884,
+          "dead": 1,
+          "dead_pct": 0.03255208333333333
+        }
+      ]
+    },
+    "10": {
+      "Chaos_a1": [
+        {
+          "val_loss": 0.16468237340450287,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.16456998884677887,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.1646396964788437,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.16421137750148773,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.16466273367404938,
+          "dead": 0,
+          "dead_pct": 0.0
+        }
+      ],
+      "TopK_ReLU": [
+        {
+          "val_loss": 0.15603895485401154,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.15609297156333923,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.1562643200159073,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.15628018975257874,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.15665662288665771,
+          "dead": 0,
+          "dead_pct": 0.0
+        }
+      ]
+    },
+    "20": {
+      "Chaos_a1": [
+        {
+          "val_loss": 0.10432693362236023,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.10427600890398026,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.1045236587524414,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.10479746758937836,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.10486942529678345,
+          "dead": 0,
+          "dead_pct": 0.0
+        }
+      ],
+      "TopK_ReLU": [
+        {
+          "val_loss": 0.0949849858880043,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.09511792659759521,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.09546708315610886,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.09506651759147644,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.09552913904190063,
+          "dead": 0,
+          "dead_pct": 0.0
+        }
+      ]
+    },
+    "50": {
+      "Chaos_a1": [
+        {
+          "val_loss": 0.045174673199653625,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.04471776261925697,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.04485199972987175,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.04498801380395889,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.045309122651815414,
+          "dead": 0,
+          "dead_pct": 0.0
+        }
+      ],
+      "TopK_ReLU": [
+        {
+          "val_loss": 0.02542174607515335,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.025518862530589104,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.025274761021137238,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.025455495342612267,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.02582458406686783,
+          "dead": 0,
+          "dead_pct": 0.0
+        }
+      ]
+    }
+  },
+  "results_B": {
+    "0": {
+      "Chaos_a1": [
+        {
+          "val_loss": 0.11250510066747665,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.11069507896900177,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.11149811744689941,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.11118067055940628,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.11067868769168854,
+          "dead": 0,
+          "dead_pct": 0.0
+        }
+      ],
+      "TopK_ReLU": [
+        {
+          "val_loss": 0.1109248548746109,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.11025629937648773,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.11142048984766006,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.11096255481243134,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.11121261864900589,
+          "dead": 0,
+          "dead_pct": 0.0
+        }
+      ]
+    },
+    "3": {
+      "Chaos_a1": [
+        {
+          "val_loss": 0.13479351997375488,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.1341826319694519,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.13443811237812042,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.1342562586069107,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.1347493976354599,
+          "dead": 0,
+          "dead_pct": 0.0
+        }
+      ],
+      "TopK_ReLU": [
+        {
+          "val_loss": 0.12904219329357147,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.12899963557720184,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.12836477160453796,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.1285855621099472,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.1296951174736023,
+          "dead": 0,
+          "dead_pct": 0.0
+        }
+      ]
+    },
+    "6": {
+      "Chaos_a1": [
+        {
+          "val_loss": 0.16492588818073273,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.16477853059768677,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.16476216912269592,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.16452588140964508,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.164207324385643,
+          "dead": 0,
+          "dead_pct": 0.0
+        }
+      ],
+      "TopK_ReLU": [
+        {
+          "val_loss": 0.15643510222434998,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.1563902050256729,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.15614785254001617,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.1570081263780594,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.1565803438425064,
+          "dead": 0,
+          "dead_pct": 0.0
+        }
+      ]
+    },
+    "9": {
+      "Chaos_a1": [
+        {
+          "val_loss": 0.1749034821987152,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.17500320076942444,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.17486853897571564,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.17527927458286285,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.17503118515014648,
+          "dead": 0,
+          "dead_pct": 0.0
+        }
+      ],
+      "TopK_ReLU": [
+        {
+          "val_loss": 0.1623145341873169,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.16171275079250336,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.16197653114795685,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.1625654548406601,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.16178125143051147,
+          "dead": 0,
+          "dead_pct": 0.0
+        }
+      ]
+    },
+    "11": {
+      "Chaos_a1": [
+        {
+          "val_loss": 0.17786292731761932,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.17736652493476868,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.1772460639476776,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.177170991897583,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.17726615071296692,
+          "dead": 0,
+          "dead_pct": 0.0
+        }
+      ],
+      "TopK_ReLU": [
+        {
+          "val_loss": 0.1577080488204956,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.157557874917984,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.15846483409404755,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.15775685012340546,
+          "dead": 0,
+          "dead_pct": 0.0
+        },
+        {
+          "val_loss": 0.1577092558145523,
+          "dead": 0,
+          "dead_pct": 0.0
+        }
+      ]
+    }
+  },
+  "summary_A": {
+    "1": {
+      "Chaos_a1": {
+        "loss_mean": 0.6421302080154419,
+        "loss_std": 0.0043067671432698105,
+        "dead_mean": 0.0,
+        "dead_pct_mean": 0.0
+      },
+      "TopK_ReLU": {
+        "loss_mean": 0.3232266128063202,
+        "loss_std": 0.0006175778614318004,
+        "dead_mean": 777.2,
+        "dead_pct_mean": 25.299479166666664
+      }
+    },
+    "5": {
+      "Chaos_a1": {
+        "loss_mean": 0.22818445265293122,
+        "loss_std": 0.00019602526441659567,
+        "dead_mean": 0.0,
+        "dead_pct_mean": 0.0
+      },
+      "TopK_ReLU": {
+        "loss_mean": 0.2107955425977707,
+        "loss_std": 0.0002464363128849133,
+        "dead_mean": 0.2,
+        "dead_pct_mean": 0.006510416666666666
+      }
+    },
+    "10": {
+      "Chaos_a1": {
+        "loss_mean": 0.1645532339811325,
+        "loss_std": 0.00017509398340646702,
+        "dead_mean": 0.0,
+        "dead_pct_mean": 0.0
+      },
+      "TopK_ReLU": {
+        "loss_mean": 0.1562666118144989,
+        "loss_std": 0.0002164610254206933,
+        "dead_mean": 0.0,
+        "dead_pct_mean": 0.0
+      }
+    },
+    "20": {
+      "Chaos_a1": {
+        "loss_mean": 0.10455869883298874,
+        "loss_std": 0.00024017409119031613,
+        "dead_mean": 0.0,
+        "dead_pct_mean": 0.0
+      },
+      "TopK_ReLU": {
+        "loss_mean": 0.09523313045501709,
+        "loss_std": 0.00022134247267841965,
+        "dead_mean": 0.0,
+        "dead_pct_mean": 0.0
+      }
+    },
+    "50": {
+      "Chaos_a1": {
+        "loss_mean": 0.04500831440091133,
+        "loss_std": 0.0002132733373735745,
+        "dead_mean": 0.0,
+        "dead_pct_mean": 0.0
+      },
+      "TopK_ReLU": {
+        "loss_mean": 0.025499089807271957,
+        "loss_std": 0.00018140750158299264,
+        "dead_mean": 0.0,
+        "dead_pct_mean": 0.0
+      }
+    }
+  },
+  "summary_B": {
+    "0": {
+      "Chaos_a1": {
+        "loss_mean": 0.11131153106689454,
+        "loss_std": 0.0006718707119075333,
+        "dead_mean": 0.0,
+        "dead_pct_mean": 0.0
+      },
+      "TopK_ReLU": {
+        "loss_mean": 0.11095536351203919,
+        "loss_std": 0.000392987498772474,
+        "dead_mean": 0.0,
+        "dead_pct_mean": 0.0
+      }
+    },
+    "3": {
+      "Chaos_a1": {
+        "loss_mean": 0.13448398411273957,
+        "loss_std": 0.000249412519173901,
+        "dead_mean": 0.0,
+        "dead_pct_mean": 0.0
+      },
+      "TopK_ReLU": {
+        "loss_mean": 0.12893745601177214,
+        "loss_std": 0.00045622008630245197,
+        "dead_mean": 0.0,
+        "dead_pct_mean": 0.0
+      }
+    },
+    "6": {
+      "Chaos_a1": {
+        "loss_mean": 0.1646399587392807,
+        "loss_std": 0.0002514276453892749,
+        "dead_mean": 0.0,
+        "dead_pct_mean": 0.0
+      },
+      "TopK_ReLU": {
+        "loss_mean": 0.15651232600212098,
+        "loss_std": 0.00028431053048098013,
+        "dead_mean": 0.0,
+        "dead_pct_mean": 0.0
+      }
+    },
+    "9": {
+      "Chaos_a1": {
+        "loss_mean": 0.1750171363353729,
+        "loss_std": 0.00014429585445775326,
+        "dead_mean": 0.0,
+        "dead_pct_mean": 0.0
+      },
+      "TopK_ReLU": {
+        "loss_mean": 0.16207010447978973,
+        "loss_std": 0.0003240406061780023,
+        "dead_mean": 0.0,
+        "dead_pct_mean": 0.0
+      }
+    },
+    "11": {
+      "Chaos_a1": {
+        "loss_mean": 0.1773825317621231,
+        "loss_std": 0.00024817463026439334,
+        "dead_mean": 0.0,
+        "dead_pct_mean": 0.0
+      },
+      "TopK_ReLU": {
+        "loss_mean": 0.15783937275409698,
+        "loss_std": 0.000319821605767435,
+        "dead_mean": 0.0,
+        "dead_pct_mean": 0.0
+      }
+    }
+  }
+}
