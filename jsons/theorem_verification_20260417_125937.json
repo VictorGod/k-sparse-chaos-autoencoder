@@ -1,0 +1,83 @@
+{
+  "experiment": "theorem_verification",
+  "timestamp": "2026-04-17T12:59:37.284523",
+  "results": {
+    "Теорема 1(i): |f(x)| <= 1+w": true,
+    "Теорема 1(ii): нули f изолированы": true,
+    "Теорема 1(iii): L = a+wb при x=0": true,
+    "Замечание: sin нарушает ранговый порядок": true,
+    "Теорема 2: P(|f(z)|>0.01) > 0.99": true,
+    "Теорема 2: нули f' изолированы": true,
+    "Следствие: 0 dead (i.i.d.)": true,
+    "Следствие: 0 dead (Original, коррел.)": true,
+    "Следствие: 0 dead (a<=1, коррел.)": false
+  },
+  "n_pass": 8,
+  "n_total": 9,
+  "configs": {
+    "Original (a=8)": {
+      "a": 8.0,
+      "w": 0.5,
+      "b": 4.0
+    },
+    "Single-layer (a=1)": {
+      "a": 1.0,
+      "w": 0.5,
+      "b": 4.0
+    },
+    "Multi-layer (a=0.5)": {
+      "a": 0.5,
+      "w": 0.1,
+      "b": 4.0
+    },
+    "Pure sin (w=0)": {
+      "a": 1.0,
+      "w": 0.0,
+      "b": 4.0
+    }
+  },
+  "iid_dead": {
+    "Original (a=8)": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "Single-layer (a=1)": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "Multi-layer (a=0.5)": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "Pure sin (w=0)": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "ReLU": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "correlated_dead_20pct": {
+    "Original (a=8)": 0,
+    "Single-layer (a=1)": 25,
+    "Multi-layer (a=0.5)": 25,
+    "Pure sin (w=0)": 25,
+    "ReLU": 1
+  }
+}
