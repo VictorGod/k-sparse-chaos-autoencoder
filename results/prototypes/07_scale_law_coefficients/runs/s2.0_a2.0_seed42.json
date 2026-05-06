@@ -1,0 +1,1 @@
+{"input_scale": 2.0, "a": 2.0, "seed": 42, "val_loss": 2.8442142009735107, "sigma_eff_input": 2.003939390182495, "sigma_eff_post_dense": 4.280738830566406, "kurtosis": -1.999749779701233, "intrinsic_dim_pre": 449, "intrinsic_dim_lat": 2756, "dead_latents": 0, "lat_var": 0.2208022028207779, "lat_range": [-1.5, 1.5]}

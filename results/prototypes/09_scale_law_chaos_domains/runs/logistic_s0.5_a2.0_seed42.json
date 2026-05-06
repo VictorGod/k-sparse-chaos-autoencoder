@@ -1,0 +1,1 @@
+{"domain": "chaos_logistic", "input_dim": 64, "latent_dim": 256, "k_active": 25, "input_scale": 0.5, "a": 2.0, "seed": 42, "val_loss": 0.06507853418588638, "sigma_eff_input": 0.4985341727733612, "sigma_eff_post_dense": 0.14962109923362732, "kurtosis": -1.9259508848190308, "dead_latents": 0}

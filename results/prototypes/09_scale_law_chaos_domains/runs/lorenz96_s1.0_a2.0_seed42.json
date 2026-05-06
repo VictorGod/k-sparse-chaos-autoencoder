@@ -1,0 +1,1 @@
+{"domain": "chaos_lorenz96", "input_dim": 40, "latent_dim": 160, "k_active": 16, "input_scale": 1.0, "a": 2.0, "seed": 42, "val_loss": 0.49817150831222534, "sigma_eff_input": 0.9948453903198242, "sigma_eff_post_dense": 0.60777747631073, "kurtosis": -1.9555385112762451, "dead_latents": 0}

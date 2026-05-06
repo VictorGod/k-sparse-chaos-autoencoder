@@ -1,0 +1,55 @@
+{
+  "experiment": "scale_law_completion",
+  "timestamp": "20260504_115752",
+  "config": {
+    "gpt2_layers": [
+      3,
+      6,
+      9
+    ],
+    "pythia_layers": [
+      6
+    ],
+    "total_runs": 128
+  },
+  "domain_fits": {
+    "gpt2_l3": {
+      "gamma": 0.7468240001379328,
+      "c": 0.23358975447875482,
+      "r_squared": 0.9882685751565151,
+      "n_points": 3
+    },
+    "gpt2_l6": {
+      "gamma": 0.6437361619367843,
+      "c": 0.21571315244122397,
+      "r_squared": 0.9731754542151143,
+      "n_points": 7
+    },
+    "gpt2_l9": {
+      "gamma": 0.7440010357095238,
+      "c": 0.21342287664958803,
+      "r_squared": 0.9999630667339264,
+      "n_points": 3
+    },
+    "pythia160m_l6": {
+      "gamma": 0.5191544461937818,
+      "c": 0.20439184366769136,
+      "r_squared": 0.959447276618555,
+      "n_points": 3
+    }
+  },
+  "unified_fit": {
+    "gamma": 0.6607044345374476,
+    "c": 0.21769967323123604,
+    "r_squared": 0.9633715534147457,
+    "n_points": 16
+  },
+  "verdict": {
+    "gpt2_l6_law_stable": false,
+    "cross_domain_stable": true,
+    "unified_law_valid": true,
+    "unified_gamma": 0.6607044345374476,
+    "unified_c": 0.21769967323123604,
+    "unified_r2": 0.9633715534147457
+  }
+}

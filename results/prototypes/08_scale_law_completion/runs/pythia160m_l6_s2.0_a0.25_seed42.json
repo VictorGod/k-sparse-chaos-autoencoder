@@ -1,0 +1,1 @@
+{"domain": "pythia160m_l6", "input_dim": 768, "latent_dim": 3072, "k_active": 307, "input_scale": 2.0, "a": 0.25, "seed": 42, "val_loss": 0.6463571786880493, "sigma_eff_input": 2.0023515224456787, "sigma_eff_post_dense": 3.308976173400879, "kurtosis": -1.8867212533950806, "dead_latents": 0}

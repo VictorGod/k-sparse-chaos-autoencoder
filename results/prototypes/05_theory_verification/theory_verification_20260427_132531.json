@@ -1,0 +1,137 @@
+{
+  "experiment": "theory_verification_05",
+  "timestamp": "20260427_132531",
+  "theorem_1": {
+    "symbolic": "verified via sympy",
+    "a": 1.0,
+    "w": 0.5,
+    "b": 4.0,
+    "measured_max_f": 1.4999999807419018,
+    "theoretical_bound_f": 1.5,
+    "measured_max_fprime": 2.999967493840533,
+    "theoretical_lipschitz": 3.0
+  },
+  "proposition_3": {
+    "monte_carlo_results": [
+      {
+        "T": 2,
+        "alpha": 1.0,
+        "mode": "naive (alpha=1)",
+        "measured": 4.497742604598719,
+        "bound": 4.5,
+        "pass": true
+      },
+      {
+        "T": 2,
+        "alpha": 0.5,
+        "mode": "scaled (alpha=1/T)",
+        "measured": 2.9993031883579526,
+        "bound": 3.0,
+        "pass": true
+      },
+      {
+        "T": 4,
+        "alpha": 1.0,
+        "mode": "naive (alpha=1)",
+        "measured": 7.475482056925902,
+        "bound": 7.5,
+        "pass": true
+      },
+      {
+        "T": 4,
+        "alpha": 0.25,
+        "mode": "scaled (alpha=1/T)",
+        "measured": 2.9972990421501255,
+        "bound": 3.0,
+        "pass": true
+      },
+      {
+        "T": 8,
+        "alpha": 1.0,
+        "mode": "naive (alpha=1)",
+        "measured": 13.356950628663373,
+        "bound": 13.5,
+        "pass": true
+      },
+      {
+        "T": 8,
+        "alpha": 0.125,
+        "mode": "scaled (alpha=1/T)",
+        "measured": 2.997429497969051,
+        "bound": 3.0,
+        "pass": true
+      },
+      {
+        "T": 16,
+        "alpha": 1.0,
+        "mode": "naive (alpha=1)",
+        "measured": 24.974681140110015,
+        "bound": 25.5,
+        "pass": true
+      },
+      {
+        "T": 16,
+        "alpha": 0.0625,
+        "mode": "scaled (alpha=1/T)",
+        "measured": 2.9966651265211834,
+        "bound": 3.0,
+        "pass": true
+      },
+      {
+        "T": 32,
+        "alpha": 1.0,
+        "mode": "naive (alpha=1)",
+        "measured": 45.483088191853376,
+        "bound": 49.5,
+        "pass": true
+      },
+      {
+        "T": 32,
+        "alpha": 0.03125,
+        "mode": "scaled (alpha=1/T)",
+        "measured": 2.9968961517789716,
+        "bound": 3.0,
+        "pass": true
+      }
+    ],
+    "all_pass": true
+  },
+  "property_4": {
+    "status": "preliminary draft",
+    "data_points": [
+      {
+        "source": "02",
+        "config": "T=0 baseline",
+        "entropy": 0.893418317443335,
+        "kurtosis": -1.767627394755795,
+        "range": [
+          -1.499996542930603,
+          1.499996542930603
+        ]
+      },
+      {
+        "source": "02",
+        "config": "T=4 naive (01)",
+        "entropy": 0.7531825360608723,
+        "kurtosis": 0.3617884741429247,
+        "range": [
+          -7.043981552124023,
+          6.96855354309082
+        ]
+      },
+      {
+        "source": "02",
+        "config": "T=4 scaled (02)",
+        "entropy": 0.8988666621536864,
+        "kurtosis": -0.4636736081395991,
+        "range": [
+          -2.9995970726013184,
+          2.9997034072875977
+        ]
+      }
+    ]
+  },
+  "theorem_5_candidate": {
+    "status": "conditional on experiment 04 verification"
+  }
+}

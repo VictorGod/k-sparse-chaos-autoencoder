@@ -1,0 +1,1 @@
+{"domain": "chaos_henon", "input_dim": 64, "latent_dim": 256, "k_active": 25, "input_scale": 4.0, "a": 0.5, "seed": 43, "val_loss": 5.093900108477101e-05, "sigma_eff_input": 3.9994354248046875, "sigma_eff_post_dense": 2.1171083450317383, "kurtosis": -1.9999854564666748, "dead_latents": 231}

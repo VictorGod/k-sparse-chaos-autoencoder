@@ -1,0 +1,1 @@
+{"domain": "gpt2_l6", "input_dim": 768, "latent_dim": 3072, "k_active": 307, "input_scale": 1.5, "a": 2.0, "seed": 43, "val_loss": 1.6301054954528809, "sigma_eff_input": 1.5029544830322266, "sigma_eff_post_dense": 3.151463270187378, "kurtosis": -1.9997365474700928, "dead_latents": 0}

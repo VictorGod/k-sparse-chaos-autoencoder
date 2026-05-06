@@ -1,0 +1,105 @@
+{
+  "experiment": "scale_law_chaos_domains",
+  "timestamp": "20260504_133418",
+  "config": {
+    "domains": [
+      "logistic",
+      "henon",
+      "lorenz96"
+    ],
+    "input_scales": [
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "a_values": [
+      0.25,
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "seeds": [
+      42,
+      43
+    ],
+    "epochs": 10,
+    "n_samples": 5000
+  },
+  "chaos_domain_fits": {
+    "chaos_henon": {
+      "gamma": 0.12710743479575742,
+      "c": 1.5128540781038382,
+      "r_squared": 0.3871475816459466,
+      "n_points": 4
+    },
+    "chaos_logistic": {
+      "gamma": 0.3282791944924126,
+      "c": 0.3700006995256131,
+      "r_squared": 0.8441622262337118,
+      "n_points": 4
+    },
+    "chaos_lorenz96": {
+      "gamma": 0.4886287718291545,
+      "c": 0.4231270680248563,
+      "r_squared": 0.9813657697286899,
+      "n_points": 4
+    }
+  },
+  "all_domain_fits": {
+    "chaos_henon": {
+      "gamma": 0.12710743479575742,
+      "c": 1.5128540781038382,
+      "r_squared": 0.3871475816459466,
+      "n_points": 4
+    },
+    "chaos_logistic": {
+      "gamma": 0.3282791944924126,
+      "c": 0.3700006995256131,
+      "r_squared": 0.8441622262337118,
+      "n_points": 4
+    },
+    "chaos_lorenz96": {
+      "gamma": 0.4886287718291545,
+      "c": 0.4231270680248563,
+      "r_squared": 0.9813657697286899,
+      "n_points": 4
+    },
+    "gpt2_l3": {
+      "gamma": 0.7468240001379328,
+      "c": 0.23358975447875482,
+      "r_squared": 0.9882685751565151,
+      "n_points": 3
+    },
+    "gpt2_l6": {
+      "gamma": 0.6437361619367843,
+      "c": 0.21571315244122397,
+      "r_squared": 0.9731754542151143,
+      "n_points": 7
+    },
+    "gpt2_l9": {
+      "gamma": 0.7440010357095238,
+      "c": 0.21342287664958803,
+      "r_squared": 0.9999630667339264,
+      "n_points": 3
+    },
+    "pythia160m_l6": {
+      "gamma": 0.5191544461937818,
+      "c": 0.20439184366769136,
+      "r_squared": 0.959447276618555,
+      "n_points": 3
+    }
+  },
+  "verdict": {
+    "n_chaos_domains": 3,
+    "n_llm_domains": 4,
+    "unified_gamma": 0.5439626487658392,
+    "unified_c": 0.33554306313091525,
+    "unified_r2": 0.5846323006483634,
+    "delta_gamma_llm_vs_chaos": 0.3487571106220641,
+    "llm_gamma_mean": 0.6634289109945056,
+    "chaos_gamma_mean": 0.3146718003724415,
+    "status": "DOMAIN_SPECIFIC"
+  }
+}
