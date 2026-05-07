@@ -84,7 +84,7 @@ results/
 | [`03_chaos_moe_variants.ipynb`](prototypes/03_chaos_moe_variants.ipynb) | Сравнение вариантов V1/V2 MoE с хаотической активацией против GELU | Утв. 2 (предв.) |
 | [`04_validation_completion.ipynb`](prototypes/04_validation_completion.ipynb) | Проверка результата на $N=3$ запусках при $E=8, m=2$ | Утв. 2 |
 | [`05_theory_verification.ipynb`](prototypes/05_theory_verification.ipynb) | Численная проверка свойств Главной теоремы | Часть 1, Следствие 1 |
-| [`06_theorem5_full_verification.ipynb`](prototypes/06_theorem5_full_verification.ipynb) | Двумерный перебор по capacity и числу экспертов $E$ (с изоляцией процессов) | Утв. 2 |
+| [`06_theorem5_full_verification.ipynb`](prototypes/06_theorem5_full_verification.ipynb) | Двумерный перебор по вместимости² эксперта и числу экспертов $E$ (с изоляцией процессов) | Утв. 2 |
 | [`07_scale_law_coefficients.ipynb`](prototypes/07_scale_law_coefficients.ipynb) | Закон масштабирования $a^*(\sigma_{\text{post}})$ на GPT-2 (слой 6) | Утв. 3 |
 | [`08_scale_law_completion.ipynb`](prototypes/08_scale_law_completion.ipynb) | Расширение закона: GPT-2 (слои 3, 9) и Pythia-160M | Утв. 3 |
 | [`09_scale_law_chaos_domains.ipynb`](prototypes/09_scale_law_chaos_domains.ipynb) | Закон масштабирования на хаотических данных (Logistic, Hénon, Lorenz-96) | Утв. 3 (зависимость от домена) |
@@ -93,7 +93,7 @@ results/
 
 | Ноутбук | Что проверяет |
 |---|---|
-| [`complete_working_draft.ipynb`](tests/complete_working_draft.ipynb) | Полный пайплайн V1→V4 |
+| [`complete_working_draft.ipynb`](tests/complete_working_draft.ipynb) | Полный цикл версий V1→V4, начальное исследование |
 | [`6.2.ipynb`](tests/6.2.ipynb) | Честное сравнение с плотной ReLU базовой архитектурой ($N=10$ запусков) |
 | [`6.2v2.ipynb`](tests/6.2v2.ipynb) | Воспроизведение 6.2 + анализ стабильности обучения |
 | [`6.3.ipynb`](tests/6.3.ipynb) | Сравнение с регуляризацией VarReg и без неё; вывод: можно убрать |
@@ -155,3 +155,8 @@ results/
 оставляются только $K$ наибольших по модулю активаций, остальные обнуляются.
 Этим заменяют L1-регуляризацию и принудительно задают разреженность латентного
 слоя.
+
+² **Вместимость эксперта** — мультипликатор внутренней размерности эксперта
+в архитектуре MoE: эксперт $f_e(x) = W_e^{(2)} \cdot \mathrm{chaos}(W_e^{(1)} x + b_e)$
+имеет вместимость $\rho = 2m$, где $m$ — отношение скрытой размерности к входной.
+Чем больше $m$, тем «жирнее» эксперт.
